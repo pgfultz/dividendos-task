@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch, Redirect, useHistory } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import DashBoard from './pages/Dashboard';
 
 import Login from './pages/Login';
