@@ -9,7 +9,6 @@ import Header from '../../components/Header';
 import './styles.css';
 
 export default function Notificacoes(){
-  const history = useHistory();
 
   const [notificacoes, setNotificacoes] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -35,12 +34,6 @@ export default function Notificacoes(){
       });
     })()
   }, []);
-  
-  function handleLogout(){
-    localStorage.removeItem('token');
-
-    history.push('/login');
-  }
 
   if(loading){
     return(
