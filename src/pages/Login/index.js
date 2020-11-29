@@ -13,8 +13,14 @@ export default function Login(){
   useEffect(() => {
     const token = localStorage.getItem('token');
 
-    if(token) history.push('/');
+    if(token) {
+      goToDashBoard();
+    }
   }, []);
+
+  function goToDashBoard(){
+    history.push('/');
+  }
 
   async function handleLogin(){
     axios.post('https://api.dividendos.me/auth/login', {
