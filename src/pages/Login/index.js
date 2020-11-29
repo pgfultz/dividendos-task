@@ -18,8 +18,8 @@ export default function Login(){
 
   async function handleLogin(){
     axios.post('https://api.dividendos.me/auth/login', {
-        //username = henri@ig.com.br
-        //password = 123456
+        //username => henri@ig.com.br
+        //password => 123456
         grant_type: 'password',
         username: login,
         password: senha,
